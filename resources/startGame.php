@@ -5,7 +5,7 @@ error_reporting(0);
 $originalArray = array();
 
 try{
-	$stmt = $dbh->prepare("SELECT seniorUID FROM users");
+	$stmt = $dbh->prepare("SELECT uid FROM users");
 	$stmt->execute();
 	$stmt->setFetchMode(PDO::FETCH_OBJ);
 	$data = $stmt->fetchAll();
@@ -14,7 +14,7 @@ try{
 }
 
 foreach($data as $datum){
-	array_push($originalArray, $datum->seniorUID);
+	array_push($originalArray, $datum->uid);
 }
 
 //Make Copy of Original Array to Shuffle
@@ -32,9 +32,9 @@ $idArray = array_combine($shuffleArray, $shiftArray);
 
 foreach ($idArray as $key => $value) {
 	try{
-		$stmt = $dbh->prepare("UPDATE users SET targetSeniorUID = :targetSeniorUID WHERE seniorUID = :seniorUID");
-		$stmt->bindParam(":targetSeniorUID", $value, PDO::PARAM_INT, 11);
-		$stmt->bindParam(":seniorUID", $key, PDO::PARAM_INT, 11);
+		$stmt = $dbh->prepare("UPDATE users SET match = :match WHERE uid = :uid");
+		$stmt->bindParam(":match", $value, PDO::PARAM_INT, 11);
+		$stmt->bindParam(":uid", $key, PDO::PARAM_INT, 11);
 		$stmt->execute();
 	}catch(PDOException $e){
 		echo $e->getMessage();
