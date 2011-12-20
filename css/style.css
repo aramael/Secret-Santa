@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+.sharelink {
+	border:none; /*important*/
+	background-color:transparent; /*important*/
+	position:absolute; /*important*/
+	top:140px;
+	left:130px;
+	width:115px;
+	height:21px;
+	outline:none;
+}
+html {
+	background: url(../img/bg2.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#floater{
+	width:456px;
+	clear:both;
+	position:relative;
+	margin:50px auto 0 auto;
+}
+.modal-top{
+	width:456px;
+	height:35px;
+	background:url(../img/modal-bg.png);
+}
+.content{
+	width:406px;
+	padding:0 25px 0 25px;
+	background:url(../img/modal-bg-main.png) repeat-y;
+	background-position:center -45px;
+}
+.modal-bottom{
+	width:456px;
+	margin:0 0 10px 0;
+	height:35px;
+	background:url(../img/modal-bg.png);
+	background-position:center bottom;
+}
+#copyright {
+	margin:0 auto 40px auto;
+	text-align:center;
+	color:#FFF;
+}
+.awesome{
+	background: #222 url(/images/alert-overlay.png) repeat-x;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	position: relative;
+	cursor: pointer;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+/* Sizes ---------- */
+.small.awesome {
+font-size: 11px;
+}
+.medium.awesome {
+font-size: 13px;
+}
+.large.awesome {
+font-size: 14px;
+padding: 8px 14px 9px;
+}
+ 
+/* Colors ---------- */
+.blue.awesome {
+background-color: #2daebf;
+}
+.red.awesome {
+background-color: #e33100;
+}
+.magenta.awesome {
+background-color: #a9014b;
+}
+.orange.awesome {
+background-color: #ff5c00;
+}
+.yellow.awesome {
+background-color: #ffb515;
+}
+h1{
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:26px;
+	text-align:center;
+	color:#000;
+	margin:0 0 25px -15px;
+}
+h1.name{
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:18px;
+	text-align:center;
+	color:#000;
+	margin:0;
+	padding:0;
+}
+.intro {
+	margin:0 15px 15px 15px;
+}
+.info {
+	margin:0 15px 0 15px;
+	padding:0 0 15px 0;
+}
+.firstChar {
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:12px;
+}
+ol {
+	margin:0 auto 15px 35px;
+	font: italic 1em Georgia, Times, serif;
+	color: #999999;
+}
+ol p {
+	font: normal .8em Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+a.facebook {
+	background:url(../img/facebook-connect.png);
+	display:block;
+	margin:0 auto 0 auto;
+	width:300px;
+	height:45px;
+	text-indent:-999em;
+}
+a.facebook:link {
+	background-position:center bottom;
+}
+a.facebook:hover {
+	background-position:center top;
+}
+textarea:focus {
+  outline: 0;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+textarea {
+	-moz-border-radius: 3px;
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	color: #808080;
+	display: inline-block;
+	font-size: 13px;
+	font-size: 100%;
+	height: 18px;
+	line-height: 18px;
+	margin: 0 auto 0 17px;
+	min-height:50px;
+	overflow-y: auto;
+	padding: 4px;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+	vertical-align: baseline;
+	vertical-align: middle;
+	width: 410px;
+}
+input[type=submit]{
+	border:none;
+	margin:15px auto 0 350px;
+}
+hr {
+	background:url(../img/hr.png);
+	width:401px;
+	height:41px;
+	border:none;
+	margin:15px auto 25px auto;
+}
+h2.nickname {
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:10px;
+	text-align:center;
+	margin:0 0 15px 0;
+}
+h2 {
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:20px;
+	text-align:center;
+	margin:0 0 15px 0;
+}
+h3.aka {
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:7px;
+	text-align:center;
+	margin:0 0 15px 0;
+}
+h3 {
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:12px;
+	text-align:center;
+	margin:0 0 15px 0;
+}
+h2.title {
+	font-family:'ChannelSlanted2Regular', Arial, sans-serif;
+	font-size:15px;
+	text-align:center;
+	margin:0 0 5px 0;
+}
+/***** GRID FRAMEWORK ****/
+/* clearfix */
+.clearfix:after, .row:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix, .row {display:inline-block;} /*Those two .clearfix have to be separate!)*/
+.clearfix, .row {display:block;}
+
+/* gridframework */
+.row, .more {position:relative; margin-left:-10px;}
+.gu1 .row {width: 104px;}
+.gu2 .row {width: 208px;}
+.gu3 .row {width: 312px;}
+.gu4 .row {width: 416px;}
+
+.col {padding-left:10px; float:left; position:relative;}
+.gu1{width: 94px;}
+.gu2{width: 198px;}
+.gu3{width: 302px;}
+.gu4{width: 406px;}
+
+.gu1 img {
+	height:94px;
+	width:94px;
+}
+.gu1 p {
+	color:#000;
+	font-size:12px;
+	text-align:center;
+	font-weight:bold;
+}
+.gu1 p a{
+	color: #000;
+}
+.gu1 p a:link, .gu1 p a:visited {
+	text-decoration:none;
+}
+.gu1 p a:hover , .gu1 p a:active {
+	text-decoration:underline;
+}
+.hide {
+	display:none;
+}
+.more {
+	margin:0 0 15px 0;
+	height:20px;
+	border-bottom:1px solid #00F;
+}
+#teamsmorebtn, #athletemorebtn, #musicianmorebtn, #novelmorebtn, #moviesmorebtn, #tvshowmorebtn, #gamesmorebtn {
+	cursor:pointer;
+}

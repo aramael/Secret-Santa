@@ -1,0 +1,40 @@
+/* @override http://pvel.local:8888/style.css */
+/* @override http://localhost:8888/style.css */
+/* Reset
+-------------------------------------------------------------- */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0;margin-bottom:1.4em;}
+caption,th,td{text-align:left;font-weight:400;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:;}
+a img{border:none;}
+
+body {color: #fff; margin: 0;background: url(img/multi3.gif) repeat;}
+
+.main img {
+	float:left;
+}
+
+.container {
+	width: 600px;
+	margin:50px auto;
+ 	text-align: center;
+ 	font: 13px/22px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ 	color: #000;
+	background:rgba(255, 255, 255, .9);
+	border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; o-border-radius:5px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  	-moz-box-shadow: 0px 4px 4px #rgba(0, 0, 0, 0.5);
+  	-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	padding:20px;
+	margin-top:200px;
+	}
+
+h2 {
+	font: 22px/28px Georgia, "Times New Roman", Times, serif;
+	}
+
+a {
+	color: #000;
+	}
